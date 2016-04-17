@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="14dp"
+        android:text="Nombre" />
+
+    <Button
+        android:id="@+id/rmfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/filename"
+        android:text="Eliminar" />
+
+    <Button
+        android:id="@+id/viewfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filename"
+        android:layout_toLeftOf="@+id/rmfile"
+        android:text="Vista Previa" />
+
+    <Button
+        android:id="@+id/getfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filename"
+        android:layout_toLeftOf="@+id/viewfile"
+        android:text="Obtener" />
+
+</RelativeLayout>
