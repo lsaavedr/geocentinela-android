@@ -1,0 +1,25 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:checkable="false"
+        android:enabled="true"
+        android:orderInCategory="100"
+        android:visible="true" />
+    <item
+        android:id="@+id/action_timesync"
+        android:orderInCategory="100"
+        android:title="@string/action_timesync"
+        android:visible="true"
+        android:enabled="true"
+        android:checkable="false" />
+    <item
+        android:id="@+id/action_sdcheck"
+        android:orderInCategory="100"
+        android:title="@string/action_sdcheck"
+        android:visible="true"
+        android:enabled="true"
+        android:checkable="false" />
+</menu>

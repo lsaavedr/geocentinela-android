@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:text="@string/idname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewId"
+        android:layout_alignBottom="@+id/idname"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewId"
+        android:layout_toEndOf="@+id/textViewId"
+        android:gravity="center" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTemp"
+        android:textSize="10sp"
+        android:layout_below="@+id/idname"
+        android:layout_toRightOf="@+id/textViewId"
+        android:layout_toLeftOf="@+id/temp"
+        android:layout_toStartOf="@+id/temp"
+        android:gravity="center" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textVBat"
+        android:layout_below="@+id/textTemp"
+        android:layout_alignLeft="@+id/textTemp"
+        android:layout_alignStart="@+id/textTemp"
+        android:textSize="10sp"
+        android:layout_alignRight="@+id/textTemp"
+        android:layout_alignEnd="@+id/textTemp"
+        android:gravity="center" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTime"
+        android:layout_below="@+id/textVBat"
+        android:layout_alignLeft="@+id/textVBat"
+        android:layout_alignStart="@+id/textVBat"
+        android:textSize="10sp"
+        android:layout_alignRight="@+id/textVBat"
+        android:layout_alignEnd="@+id/textVBat"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temp"
+        android:layout_toLeftOf="@+id/vbat"
+        android:layout_below="@+id/idname" />
+
+    <Button
+        android:id="@+id/vbat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VBat"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_below="@+id/idname" />
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/idname" />
+
+    <ListView
+        android:id="@+id/listFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/time"
+        android:layout_marginLeft="15dip"
+        android:layout_above="@+id/ls">
+    </ListView>
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:maxLines="3"
+        android:scrollbars="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/ls"
+        android:textColor="#000000"
+        android:background="#ff6600" />
+
+    <Button
+        android:text="Refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ls"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/log" />
+
+</RelativeLayout>

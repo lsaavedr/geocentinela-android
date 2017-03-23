@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GeoCentinela</string>
+
+    <string name="action_settings">Configuración</string>
+    <string name="action_timesync">Sincronizar fecha</string>
+    <string name="action_sdcheck">SD Benchmark</string>
+
+    <string name="title_activity_graph">Sismograma</string>
+    <string name="title_activity_settings">Configuración</string>
+
+    <string name="save">Guardar</string>
+    <string name="refresh">Refrescar</string>
+
+    <string name="idname">ID</string>
+    <string name="phone_warning">Teléfono de contacto</string>
+    <string name="time_zone">Zona horaria</string>
+    <string name="call">Llamar</string>
+
+    <string name="name">Nombre</string>
+    <string name="gain">Ganancia</string>
+    <string name="ksps">kSPS</string>
+    <string name="hardware_average">Hardware Average</string>
+
+    <string name="testing">Testing</string>
+    <string name="daily">Programación diaria</string>
+
+    <string name="trigger">Trigger</string>
+    <string name="trigger_time">Tiempo</string>
+    <string name="send_trigger_time">Envío</string>
+    <string name="trigger_level">Nivel</string>
+
+    <string name="gps">Usar GPS</string>
+
+    <string name="begin">Comienzo</string>
+    <string name="end">Término</string>
+    <string name="lapse">Intervalo</string>
+    <string name="delay">Retardo</string>
+
+    <string name="format_hhmmss">[hh:mm:ss]</string>
+    <string name="format_hhmm">[hh:mm]</string>
+    <string name="format_percent">[n%]</string>
+
+    <string name="sensitivity">Sensibilidad[V/[mm/s]]</string>
+    <string name="lat">Latitud</string>
+    <string name="lng">Longitud</string>
+    <string name="cta">Cota</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_above="@+id/filedate" />
+
+    <TextView
+        android:text="size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filesize"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:text="date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filedate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/filesize"
+        android:gravity="center_vertical" />
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fileprogress"
+        android:layout_below="@+id/filename"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/filedate"
+        android:layout_toStartOf="@+id/filedate" />
+
+    <Button
+        android:id="@+id/getfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obtener"
+        android:layout_toLeftOf="@+id/viewfile"
+        android:layout_toStartOf="@+id/viewfile"
+        android:layout_alignTop="@+id/viewfile" />
+
+    <Button
+        android:id="@+id/viewfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preview"
+        android:layout_toLeftOf="@+id/rmfile"
+        android:layout_toStartOf="@+id/rmfile"
+        android:layout_alignTop="@+id/rmfile" />
+
+    <Button
+        android:id="@+id/rmfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/filedate" />
+
+</RelativeLayout>
